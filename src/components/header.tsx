@@ -1,12 +1,14 @@
 "use client";
 
-import { Wrench } from "lucide-react";
+import { icons } from "lucide-react";
 import Link from "next/link";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { motion } from "framer-motion";
 import { siteConfig } from "@/config/site";
 
 export function Header() {
+  const IconComponent = icons[siteConfig.headerIcon as keyof typeof icons];
+
   return (
     <motion.header
       initial={{ y: -20, opacity: 0 }}
@@ -18,7 +20,7 @@ export function Header() {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-brand to-brand-accent rounded-lg blur-sm opacity-75 group-hover:opacity-100 transition-opacity" />
             <div className="relative bg-background rounded-lg p-1.5">
-              <Wrench className="h-5 w-5 text-brand" />
+              {IconComponent && <IconComponent className="h-5 w-5 text-brand" />}
             </div>
           </div>
           <span className="font-bold text-lg bg-gradient-to-r from-brand to-brand-accent bg-clip-text text-transparent">

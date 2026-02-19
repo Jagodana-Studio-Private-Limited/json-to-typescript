@@ -9,6 +9,8 @@ import { AnimatedGradientText } from "@/components/animated-gradient-text";
 import { FAQSection } from "@/components/faq-section";
 import { RelatedTools } from "@/components/related-tools";
 import { Button } from "@/components/ui/button";
+import { SocialShare } from "@/components/social-share";
+import { GitHubStar } from "@/components/github-star";
 import { siteConfig } from "@/config/site";
 
 export function HomePage() {
@@ -68,6 +70,7 @@ export function HomePage() {
             <Button
               size="lg"
               onClick={scrollToTool}
+              aria-label="Scroll to tool section"
               className="gap-2 bg-gradient-to-r from-brand to-brand-accent text-white shadow-lg shadow-brand/25 px-8 py-6 text-lg"
             >
               Try Now
@@ -121,6 +124,12 @@ export function HomePage() {
               </p>
             </div>
           </motion.div>
+        </section>
+
+        {/* Share + GitHub Star */}
+        <section className="flex items-center justify-center gap-3 mb-20">
+          <SocialShare />
+          <GitHubStar />
         </section>
 
         {/* FAQ Section */}

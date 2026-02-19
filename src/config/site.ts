@@ -156,13 +156,13 @@ export const siteConfig = {
       changeFrequency: "weekly" as const,
       priority: 1,
     },
-    // Example: uncomment and add more pages as needed
-    // "/about": {
-    //   title: "About - {{TOOL_NAME}}",
-    //   description: "Learn more about {{TOOL_NAME}} and how it works.",
-    //   changeFrequency: "monthly" as const,
-    //   priority: 0.7,
-    // },
+    // Example page (DELETE when starting your tool, or customize)
+    "/about": {
+      title: "About - {{TOOL_NAME}}",
+      description: "Learn more about {{TOOL_NAME}} and how it works.",
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
     // "/blog": {
     //   title: "Blog - {{TOOL_NAME}}",
     //   description: "Tips, tutorials, and updates about {{TOOL_NAME}}.",

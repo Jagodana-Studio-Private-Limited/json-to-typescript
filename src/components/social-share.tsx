@@ -70,7 +70,7 @@ export function SocialShare({
         className="gap-1.5"
       >
         {copied ? (
-          <Check className="h-3.5 w-3.5 text-green-500" />
+          <Check className="h-3.5 w-3.5 text-brand" />
         ) : (
           <Copy className="h-3.5 w-3.5" />
         )}
