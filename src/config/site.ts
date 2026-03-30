@@ -1,97 +1,100 @@
 export const siteConfig = {
   // ====== CUSTOMIZE THESE FOR EACH TOOL ======
-  name: "{{TOOL_NAME}}",
-  title: "{{TOOL_TITLE}}",
-  description: "{{TOOL_DESCRIPTION}}",
-  url: "https://{{TOOL_SLUG}}.jagodana.com",
+  name: "JSON to TypeScript",
+  title: "JSON to TypeScript - Instantly Convert JSON to TypeScript Interfaces",
+  description:
+    "Paste any JSON and instantly generate clean TypeScript interfaces and types. Supports nested objects, arrays, optional fields, and union types. 100% client-side — your data never leaves your browser.",
+  url: "https://json-to-typescript.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
   // Header
-  headerIcon: "Wrench", // lucide-react icon name (e.g., Image, Map, Code, Palette, Globe, FileSearch)
-  // Brand gradient colors for Tailwind are in globals.css (--brand / --brand-accent)
-  // Use text-brand, from-brand, to-brand-accent etc. in components
-  brandAccentColor: "#06b6d4", // hex accent for OG image gradient (must match --brand-accent in globals.css)
+  headerIcon: "Braces",
+  brandAccentColor: "#6366f1",
 
   // SEO
   keywords: [
-    "{{KEYWORD_1}}",
-    "{{KEYWORD_2}}",
-    "{{KEYWORD_3}}",
+    "json to typescript",
+    "json to ts",
+    "json to interface",
+    "typescript interface generator",
+    "json converter",
+    "typescript type generator",
+    "json schema to typescript",
   ],
-  applicationCategory: "DeveloperApplication", // or "DesignApplication", "UtilitiesApplication"
+  applicationCategory: "DeveloperApplication",
 
   // Theme
-  themeColor: "#10b981", // used in manifest and meta tags
+  themeColor: "#3b82f6",
 
   // Branding
   creator: "Jagodana",
   creatorUrl: "https://jagodana.com",
   twitterHandle: "@jagodana",
 
-  // Social Profiles (for Organization schema sameAs)
   socialProfiles: [
     "https://twitter.com/jagodana",
-    // Add more: LinkedIn, YouTube, etc.
+    "https://www.linkedin.com/company/jagodana-llc",
   ],
 
-  // Links
   links: {
-    github: "https://github.com/Jagodana-Studio-Private-Limited/{{TOOL_SLUG}}",
+    github:
+      "https://github.com/Jagodana-Studio-Private-Limited/json-to-typescript",
     website: "https://jagodana.com",
   },
 
-  // Footer
   footer: {
-    about: "{{FOOTER_ABOUT_DESCRIPTION}}",
+    about:
+      "JSON to TypeScript converts raw JSON data into clean, well-structured TypeScript interfaces. Built for developers who want type safety without the manual work.",
     featuresTitle: "Features",
     features: [
-      "{{FEATURE_1}}",
-      "{{FEATURE_2}}",
-      "{{FEATURE_3}}",
-      "{{FEATURE_4}}",
+      "Instant JSON to TypeScript conversion",
+      "Nested object & array support",
+      "Optional field detection",
+      "One-click copy to clipboard",
     ],
   },
 
-  // Hero Section
   hero: {
-    badge: "{{HERO_BADGE_TEXT}}",
-    titleLine1: "{{HERO_TITLE_LINE_1}}",
-    titleGradient: "{{HERO_TITLE_GRADIENT_TEXT}}",
-    subtitle: "{{HERO_SUBTITLE}}",
+    badge: "Developer Tool",
+    titleLine1: "JSON to",
+    titleGradient: "TypeScript",
+    subtitle:
+      "Paste any JSON and instantly generate clean, well-typed TypeScript interfaces. Supports nested objects, arrays, optional fields, and more.",
   },
 
-  // Feature Cards (shown on homepage)
   featureCards: [
     {
-      icon: "{{FEATURE_ICON_1}}",
-      title: "{{FEATURE_CARD_TITLE_1}}",
-      description: "{{FEATURE_CARD_DESC_1}}",
+      icon: "⚡",
+      title: "Instant Conversion",
+      description:
+        "Paste JSON and get TypeScript interfaces in real-time. No waiting, no submissions — it just works.",
     },
     {
-      icon: "{{FEATURE_ICON_2}}",
-      title: "{{FEATURE_CARD_TITLE_2}}",
-      description: "{{FEATURE_CARD_DESC_2}}",
+      icon: "🔒",
+      title: "100% Client-Side",
+      description:
+        "Your data never leaves your browser. All processing happens locally for complete privacy.",
     },
     {
-      icon: "{{FEATURE_ICON_3}}",
-      title: "{{FEATURE_CARD_TITLE_3}}",
-      description: "{{FEATURE_CARD_DESC_3}}",
+      icon: "🧩",
+      title: "Smart Type Inference",
+      description:
+        "Handles nested objects, arrays, union types, and optional fields intelligently.",
     },
   ],
 
-  // Related Tools (cross-linking to sibling Jagodana tools for internal SEO)
   relatedTools: [
     {
-      name: "Favicon Generator",
-      url: "https://favicon-generator.jagodana.com",
-      icon: "🎨",
-      description: "Generate all favicon sizes + manifest from any image.",
+      name: "JSON Formatter",
+      url: "https://json-formatter.tools.jagodana.com",
+      icon: "📋",
+      description: "Format and validate JSON data with syntax highlighting.",
     },
     {
-      name: "Sitemap Checker",
-      url: "https://sitemap-checker.jagodana.com",
+      name: "JSON Path Finder",
+      url: "https://json-path-finder.tools.jagodana.com",
       icon: "🔍",
-      description: "Discover and validate sitemaps on any website.",
+      description: "Navigate and extract values from JSON using JSONPath.",
     },
     {
       name: "Regex Playground",
@@ -100,75 +103,76 @@ export const siteConfig = {
       description: "Build, test & debug regular expressions in real-time.",
     },
     {
-      name: "Screenshot Beautifier",
-      url: "https://screenshot-beautifier.jagodana.com",
-      icon: "📸",
-      description: "Transform screenshots into beautiful images.",
+      name: "UUID Generator",
+      url: "https://uuid-generator.tools.jagodana.com",
+      icon: "🆔",
+      description: "Generate v4 and v7 UUIDs instantly.",
     },
     {
-      name: "Color Palette Explorer",
-      url: "https://color-palette-explorer.jagodana.com",
-      icon: "🎭",
-      description: "Extract color palettes from any image.",
+      name: "Hash Generator",
+      url: "https://hash-generator.tools.jagodana.com",
+      icon: "🔐",
+      description: "Generate MD5, SHA-1, SHA-256, and SHA-512 hashes.",
     },
     {
-      name: "Logo Maker",
-      url: "https://logo-maker.jagodana.com",
-      icon: "✏️",
-      description: "Create a professional logo in 60 seconds.",
+      name: "Base64 Image Tool",
+      url: "https://base64-image-tool.tools.jagodana.com",
+      icon: "🖼️",
+      description: "Encode and decode images to/from Base64.",
     },
   ],
 
-  // HowTo Steps (drives HowTo JSON-LD schema for rich results)
   howToSteps: [
-    { name: "{{STEP_1_NAME}}", text: "{{STEP_1_TEXT}}", url: "" },
-    { name: "{{STEP_2_NAME}}", text: "{{STEP_2_TEXT}}", url: "" },
-    { name: "{{STEP_3_NAME}}", text: "{{STEP_3_TEXT}}", url: "" },
+    {
+      name: "Paste your JSON",
+      text: "Copy your JSON data from an API response, config file, or any source and paste it into the input editor.",
+      url: "",
+    },
+    {
+      name: "Review TypeScript output",
+      text: "The tool instantly generates TypeScript interfaces with proper types, nested structures, and naming.",
+      url: "",
+    },
+    {
+      name: "Copy and use",
+      text: "Click the copy button to copy the generated TypeScript code to your clipboard and paste it into your project.",
+      url: "",
+    },
   ],
-  howToTotalTime: "PT2M", // ISO 8601 duration (e.g., PT2M = 2 minutes)
+  howToTotalTime: "PT1M",
 
-  // FAQ (drives both the FAQ UI section and FAQPage JSON-LD schema)
   faq: [
     {
-      question: "{{FAQ_QUESTION_1}}",
-      answer: "{{FAQ_ANSWER_1}}",
+      question: "How does JSON to TypeScript conversion work?",
+      answer:
+        "The tool parses your JSON data and infers TypeScript types from the values. Objects become interfaces, arrays are typed by their element types, and primitives map to string, number, boolean, or null.",
     },
     {
-      question: "{{FAQ_QUESTION_2}}",
-      answer: "{{FAQ_ANSWER_2}}",
+      question: "Does it handle nested JSON objects?",
+      answer:
+        "Yes! Nested objects are converted into separate TypeScript interfaces with proper references. Deeply nested structures are fully supported.",
     },
     {
-      question: "{{FAQ_QUESTION_3}}",
-      answer: "{{FAQ_ANSWER_3}}",
+      question: "Is my data safe?",
+      answer:
+        "Absolutely. All conversion happens in your browser using JavaScript. No data is sent to any server. Your JSON never leaves your machine.",
     },
     {
-      question: "{{FAQ_QUESTION_4}}",
-      answer: "{{FAQ_ANSWER_4}}",
+      question: "Can it handle arrays with mixed types?",
+      answer:
+        "Yes. If an array contains elements of different types, the tool generates a union type (e.g., string | number) to represent all possible element types.",
     },
   ],
 
-  // ====== PAGES (for sitemap + per-page SEO) ======
-  // Add every route here. Sitemap and generatePageMetadata() read from this.
   pages: {
     "/": {
-      title: "{{TOOL_TITLE}}",
-      description: "{{TOOL_DESCRIPTION}}",
+      title:
+        "JSON to TypeScript - Instantly Convert JSON to TypeScript Interfaces",
+      description:
+        "Paste any JSON and instantly generate clean TypeScript interfaces and types. Supports nested objects, arrays, optional fields, and union types. 100% client-side.",
       changeFrequency: "weekly" as const,
       priority: 1,
     },
-    // Example page (DELETE when starting your tool, or customize)
-    "/about": {
-      title: "About - {{TOOL_NAME}}",
-      description: "Learn more about {{TOOL_NAME}} and how it works.",
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    // "/blog": {
-    //   title: "Blog - {{TOOL_NAME}}",
-    //   description: "Tips, tutorials, and updates about {{TOOL_NAME}}.",
-    //   changeFrequency: "weekly" as const,
-    //   priority: 0.8,
-    // },
   },
 } as const;
 

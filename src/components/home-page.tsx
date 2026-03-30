@@ -11,6 +11,7 @@ import { RelatedTools } from "@/components/related-tools";
 import { Button } from "@/components/ui/button";
 import { SocialShare } from "@/components/social-share";
 import { GitHubStar } from "@/components/github-star";
+import { JsonToTs } from "@/components/json-to-ts";
 import { siteConfig } from "@/config/site";
 
 export function HomePage() {
@@ -47,7 +48,7 @@ export function HomePage() {
             className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-6 leading-tight"
           >
             {siteConfig.hero.titleLine1}
-            <br className="hidden sm:block" />
+            <br className="hidden sm:block" />{" "}
             <AnimatedGradientText>{siteConfig.hero.titleGradient}</AnimatedGradientText>
           </motion.h1>
 
@@ -105,25 +106,9 @@ export function HomePage() {
           </motion.div>
         </section>
 
-        {/* ============================================ */}
-        {/* TODO: Replace this section with your tool UI */}
-        {/* ============================================ */}
+        {/* Tool Interface */}
         <section id="tool" className="scroll-mt-24 mb-20">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="max-w-4xl mx-auto"
-          >
-            <div className="rounded-2xl border border-border/50 bg-muted/30 p-12 text-center">
-              <p className="text-muted-foreground">
-                Your tool interface goes here.
-              </p>
-              <p className="text-sm text-muted-foreground/60 mt-2">
-                Replace this placeholder with your tool&apos;s main component.
-              </p>
-            </div>
-          </motion.div>
+          <JsonToTs />
         </section>
 
         {/* Share + GitHub Star */}
@@ -137,7 +122,7 @@ export function HomePage() {
           <FAQSection />
         </section>
 
-        {/* Related Tools - Cross-linking for SEO */}
+        {/* Related Tools */}
         <section className="text-center">
           <RelatedTools />
         </section>
