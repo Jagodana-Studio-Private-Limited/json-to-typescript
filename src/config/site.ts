@@ -1,175 +1,196 @@
 export const siteConfig = {
   // ====== CUSTOMIZE THESE FOR EACH TOOL ======
   name: "JSON to TypeScript",
-  title: "JSON to TypeScript - Instantly Convert JSON to TypeScript Interfaces",
+  title: "JSON to TypeScript Interface Generator — Free Online Tool",
   description:
-    "Paste any JSON and instantly generate clean TypeScript interfaces and types. Supports nested objects, arrays, optional fields, and union types. 100% client-side — your data never leaves your browser.",
+    "Convert any JSON object to TypeScript interfaces or type aliases instantly. Paste your JSON, get clean TypeScript types — supports nested objects, arrays, optional properties, and union types. Free, private, no signup.",
   url: "https://json-to-typescript.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
   // Header
-  headerIcon: "Braces",
-  brandAccentColor: "#6366f1",
+  headerIcon: "FileCode", // lucide-react icon name
+  brandAccentColor: "#6366f1", // hex accent for OG image gradient (must match --brand-accent in globals.css)
 
   // SEO
   keywords: [
     "json to typescript",
-    "json to ts",
-    "json to interface",
+    "json to typescript interface",
+    "json to ts types",
+    "convert json to typescript",
     "typescript interface generator",
-    "json converter",
+    "json type generator",
     "typescript type generator",
+    "online typescript tool",
     "json schema to typescript",
+    "free typescript tool",
   ],
   applicationCategory: "DeveloperApplication",
 
   // Theme
-  themeColor: "#3b82f6",
+  themeColor: "#3b82f6", // blue-500
 
   // Branding
   creator: "Jagodana",
   creatorUrl: "https://jagodana.com",
   twitterHandle: "@jagodana",
 
+  // Social Profiles (for Organization schema sameAs)
   socialProfiles: [
     "https://twitter.com/jagodana",
     "https://www.linkedin.com/company/jagodana-llc",
   ],
 
+  // Links
   links: {
     github:
       "https://github.com/Jagodana-Studio-Private-Limited/json-to-typescript",
     website: "https://jagodana.com",
   },
 
+  // Footer
   footer: {
     about:
-      "JSON to TypeScript converts raw JSON data into clean, well-structured TypeScript interfaces. Built for developers who want type safety without the manual work.",
+      "JSON to TypeScript instantly converts any JSON object into clean TypeScript interfaces or type aliases — right in your browser. No data leaves your machine.",
     featuresTitle: "Features",
     features: [
-      "Instant JSON to TypeScript conversion",
-      "Nested object & array support",
-      "Optional field detection",
-      "One-click copy to clipboard",
+      "Nested object support",
+      "Interface & type alias output",
+      "Optional property detection",
+      "Array & union type inference",
     ],
   },
 
+  // Hero Section
   hero: {
-    badge: "Developer Tool",
-    titleLine1: "JSON to",
-    titleGradient: "TypeScript",
+    badge: "Free TypeScript Tool",
+    titleLine1: "Turn JSON into",
+    titleGradient: "TypeScript Types",
     subtitle:
-      "Paste any JSON and instantly generate clean, well-typed TypeScript interfaces. Supports nested objects, arrays, optional fields, and more.",
+      "Paste any JSON and get clean TypeScript interfaces or type aliases in seconds. Supports nested objects, arrays, optional fields, and union types — 100% browser-based, zero data sent.",
   },
 
+  // Feature Cards (shown on homepage)
   featureCards: [
     {
-      icon: "⚡",
-      title: "Instant Conversion",
+      icon: "🧩",
+      title: "Nested Objects",
       description:
-        "Paste JSON and get TypeScript interfaces in real-time. No waiting, no submissions — it just works.",
+        "Deeply nested JSON structures are converted to properly named, hierarchical TypeScript interfaces automatically.",
+    },
+    {
+      icon: "⚡",
+      title: "Real-Time Output",
+      description:
+        "As you type or paste JSON, TypeScript types are generated instantly — no button to click, no waiting.",
     },
     {
       icon: "🔒",
-      title: "100% Client-Side",
+      title: "100% Private",
       description:
-        "Your data never leaves your browser. All processing happens locally for complete privacy.",
-    },
-    {
-      icon: "🧩",
-      title: "Smart Type Inference",
-      description:
-        "Handles nested objects, arrays, union types, and optional fields intelligently.",
+        "All processing happens in your browser. Your JSON never leaves your device — safe for sensitive API payloads.",
     },
   ],
 
+  // Related Tools (cross-linking to sibling Jagodana tools for internal SEO)
   relatedTools: [
     {
       name: "JSON Formatter",
       url: "https://json-formatter.tools.jagodana.com",
       icon: "📋",
-      description: "Format and validate JSON data with syntax highlighting.",
+      description: "Format and beautify JSON with syntax highlighting.",
+    },
+    {
+      name: "JSON Schema Generator",
+      url: "https://json-schema-generator.tools.jagodana.com",
+      icon: "📐",
+      description: "Instantly convert JSON to a JSON Schema.",
     },
     {
       name: "JSON Path Finder",
       url: "https://json-path-finder.tools.jagodana.com",
       icon: "🔍",
-      description: "Navigate and extract values from JSON using JSONPath.",
+      description: "Navigate and query JSON with JSONPath expressions.",
+    },
+    {
+      name: "JWT Decoder",
+      url: "https://jwt-decoder.tools.jagodana.com",
+      icon: "🔑",
+      description: "Decode and inspect JSON Web Tokens instantly.",
+    },
+    {
+      name: "YAML to JSON Converter",
+      url: "https://yaml-json-converter.tools.jagodana.com",
+      icon: "🔄",
+      description: "Convert YAML to JSON and back in one click.",
     },
     {
       name: "Regex Playground",
-      url: "https://regex-playground.jagodana.com",
+      url: "https://regex-playground.tools.jagodana.com",
       icon: "🧪",
       description: "Build, test & debug regular expressions in real-time.",
     },
-    {
-      name: "UUID Generator",
-      url: "https://uuid-generator.tools.jagodana.com",
-      icon: "🆔",
-      description: "Generate v4 and v7 UUIDs instantly.",
-    },
-    {
-      name: "Hash Generator",
-      url: "https://hash-generator.tools.jagodana.com",
-      icon: "🔐",
-      description: "Generate MD5, SHA-1, SHA-256, and SHA-512 hashes.",
-    },
-    {
-      name: "Base64 Image Tool",
-      url: "https://base64-image-tool.tools.jagodana.com",
-      icon: "🖼️",
-      description: "Encode and decode images to/from Base64.",
-    },
   ],
 
+  // HowTo Steps (drives HowTo JSON-LD schema for rich results)
   howToSteps: [
     {
       name: "Paste your JSON",
-      text: "Copy your JSON data from an API response, config file, or any source and paste it into the input editor.",
+      text: "Copy any JSON object, array, or API response and paste it into the input panel on the left.",
       url: "",
     },
     {
-      name: "Review TypeScript output",
-      text: "The tool instantly generates TypeScript interfaces with proper types, nested structures, and naming.",
+      name: "Configure options",
+      text: "Choose interface vs type alias, toggle optional properties, add export keyword, or enable readonly modifiers.",
       url: "",
     },
     {
-      name: "Copy and use",
-      text: "Click the copy button to copy the generated TypeScript code to your clipboard and paste it into your project.",
+      name: "Copy TypeScript types",
+      text: "Click Copy to grab the generated TypeScript interfaces and paste them directly into your codebase.",
       url: "",
     },
   ],
-  howToTotalTime: "PT1M",
+  howToTotalTime: "PT1M", // ISO 8601 duration
 
+  // FAQ (drives both the FAQ UI section and FAQPage JSON-LD schema)
   faq: [
     {
-      question: "How does JSON to TypeScript conversion work?",
+      question: "What does the JSON to TypeScript tool do?",
       answer:
-        "The tool parses your JSON data and infers TypeScript types from the values. Objects become interfaces, arrays are typed by their element types, and primitives map to string, number, boolean, or null.",
+        "It converts any valid JSON object or array into TypeScript interfaces or type aliases. Paste your JSON on the left and see clean, ready-to-use TypeScript types on the right — instantly.",
     },
     {
-      question: "Does it handle nested JSON objects?",
+      question: "Does it handle nested objects and arrays?",
       answer:
-        "Yes! Nested objects are converted into separate TypeScript interfaces with proper references. Deeply nested structures are fully supported.",
+        "Yes. Nested objects are extracted into separate named interfaces (e.g., UserAddress, OrderItem[]). Arrays of objects produce typed array definitions, and mixed-type arrays become union types.",
     },
     {
-      question: "Is my data safe?",
+      question: "Can I generate type aliases instead of interfaces?",
       answer:
-        "Absolutely. All conversion happens in your browser using JavaScript. No data is sent to any server. Your JSON never leaves your machine.",
+        "Absolutely. Toggle the 'Type Alias' option to switch from interface Foo {} to type Foo = {}. Both outputs are fully valid TypeScript.",
     },
     {
-      question: "Can it handle arrays with mixed types?",
+      question: "Is my JSON data sent to any server?",
       answer:
-        "Yes. If an array contains elements of different types, the tool generates a union type (e.g., string | number) to represent all possible element types.",
+        "No. Everything runs entirely in your browser using JavaScript. Your JSON is never transmitted, stored, or logged anywhere. It's safe to paste sensitive API payloads.",
+    },
+    {
+      question: "What happens with optional properties?",
+      answer:
+        "When 'Optional Properties' is enabled and your input contains an array of objects, any key that doesn't appear in every object is marked as optional (key?: Type). For a single object, all keys are required by default.",
+    },
+    {
+      question: "Can I add the export keyword to interfaces?",
+      answer:
+        "Yes — toggle 'Export Types' and every generated interface or type alias is prefixed with export. This lets you paste them directly into a .ts module file.",
     },
   ],
 
+  // ====== PAGES (for sitemap + per-page SEO) ======
   pages: {
     "/": {
-      title:
-        "JSON to TypeScript - Instantly Convert JSON to TypeScript Interfaces",
+      title: "JSON to TypeScript Interface Generator — Free Online Tool",
       description:
-        "Paste any JSON and instantly generate clean TypeScript interfaces and types. Supports nested objects, arrays, optional fields, and union types. 100% client-side.",
+        "Convert any JSON object to TypeScript interfaces or type aliases instantly. Supports nested objects, arrays, optional properties. Free, private, browser-based.",
       changeFrequency: "weekly" as const,
       priority: 1,
     },

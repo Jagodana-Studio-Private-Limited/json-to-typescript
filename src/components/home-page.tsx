@@ -11,7 +11,7 @@ import { RelatedTools } from "@/components/related-tools";
 import { Button } from "@/components/ui/button";
 import { SocialShare } from "@/components/social-share";
 import { GitHubStar } from "@/components/github-star";
-import { JsonToTs } from "@/components/json-to-ts";
+import { JsonConverter } from "@/components/json-converter";
 import { siteConfig } from "@/config/site";
 
 export function HomePage() {
@@ -108,7 +108,13 @@ export function HomePage() {
 
         {/* Tool Interface */}
         <section id="tool" className="scroll-mt-24 mb-20">
-          <JsonToTs />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+          >
+            <JsonConverter />
+          </motion.div>
         </section>
 
         {/* Share + GitHub Star */}
